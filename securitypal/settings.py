@@ -72,8 +72,8 @@ WSGI_APPLICATION = 'securitypal.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'securitypal',
-        'USER': 'securitypal',
+        'NAME': 'security_pal',
+        'USER': 'abc',
         'PASSWORD': 'abc',
         'HOST': 'localhost',
         'PORT': '',
@@ -121,6 +121,9 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS=[
     os.path.join(BASE_DIR, 'securitypal/static')
 ]
+
+MEDIA_URL = '/spreedsheet/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'spreedsheet')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field

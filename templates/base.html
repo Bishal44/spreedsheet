@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang=en>
+
+<head>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+
+
+<!-- Body -->
+<style type="text/css">
+	.main{
+		min-height: 100vh;
+		height: 100%;
+	}
+</style>
+	<link href="{% static 'css/bootstrap.css' %}" >
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+<div class="main">
+	{% block content %}
+
+	{% endblock content %}
+</div>
+<!-- End Body -->
+
+
+</body>
+
+
+</html>
